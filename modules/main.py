@@ -21,9 +21,9 @@ class QueryProcessor:
         print(data)
         
         output = ollama.generate(
-            model="gemma:2b",
-            #  model="llama3",
-            prompt=f" You are very kind and helful AI assistant  explain the content asked about: {prompt} from this data: {data}."
+            # model="gemma:2b",
+             model="llama3",
+            prompt=f"explain the content with 100 words asked about: {prompt} from this data: {data}."
         )
         return output['response']
 

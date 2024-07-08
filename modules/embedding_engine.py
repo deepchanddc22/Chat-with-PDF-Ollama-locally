@@ -1,5 +1,3 @@
-
-
 import ollama
 import chromadb
 from data_ingestion import PDFTextExtractor
